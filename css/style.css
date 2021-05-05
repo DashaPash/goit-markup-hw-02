@@ -21,14 +21,20 @@
 body {
   font-family: Roboto, sans-serif;
 }
+ul {
+  list-style: none;
+}
+
+/* Шапка сайта*/
+
 header {
   background-color: var(--white-color);
 }
 .logo {
-  color: #000000;
+  color: var(--title-text-color);
 
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -58,4 +64,41 @@ header {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--blue-accent);
+}
+
+.site-menu .nav-link.activ-page {
+  color: var(--blue-accent);
+}
+
+/* Оформление героя*/
+.hero {
+  background-color: var(--dark-background-color);
+}
+
+.hero-title {
+  color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  background-color: var(--blue-accent);
+  color: var(--white-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.hero-button:hover {
+  background-color: #188ce8;
 }
