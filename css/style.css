@@ -11,7 +11,6 @@
 :root {
   --white-color: #ffffff;
   --dark-background-color: #2f303a;
-  --light-background-color: #e5e5e5;
   --grey-background-color: #f5f4fa;
   --title-text-color: #212121;
   --text-color: #757575;
@@ -20,6 +19,7 @@
 }
 body {
   font-family: Roboto, sans-serif;
+  color: var(--text-color);
 }
 ul {
   list-style: none;
@@ -31,14 +31,15 @@ header {
   background-color: var(--white-color);
 }
 .logo {
-  color: var(--title-text-color);
-
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+.logo.dark-logo {
+  color: var(--title-text-color);
 }
 
 .logo .logo-accent {
@@ -56,16 +57,12 @@ header {
 .site-menu > .nav-link {
   color: var(--title-text-color);
 }
-
 .nav-contact > .nav-link {
   color: var(--text-color);
 }
 
 .nav-link:hover,
-.nav-link:focus {
-  color: var(--blue-accent);
-}
-
+.nav-link:focus,
 .site-menu .nav-link.activ-page {
   color: var(--blue-accent);
 }
@@ -101,4 +98,67 @@ header {
 
 .hero-button:hover {
   background-color: #188ce8;
+}
+
+/* Секция особенности */
+/* Чем мы занимаемся*/
+/*Наша команда*/
+.features,
+.about {
+  background-color: var(--white-color);
+}
+.features-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.about-title,
+.team-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team {
+  background-color: var(--grey-background-color);
+}
+
+/*футер*/
+
+.contact {
+  background-color: var(--dark-background-color);
+}
+.logo.light-logo {
+  color: var(--white-color);
+}
+
+.adres,
+.mail,
+.phone-number {
+  color: var(--white-color);
+
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.mail,
+.phone-number {
+  color: var(--white-transparent-color);
 }
