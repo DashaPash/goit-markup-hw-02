@@ -63,7 +63,8 @@ header {
 
 .nav-link:hover,
 .nav-link:focus,
-.site-menu .nav-link.activ-page {
+.site-menu .nav-link.activ-page,
+.site-menu .nav-link.activ-page-portfolio {
   color: var(--blue-accent);
 }
 
