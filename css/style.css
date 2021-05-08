@@ -43,7 +43,11 @@ body {
 .nav-contact .nav-link:hover,
 .nav-contact .nav-link:focus,
 .nav-contact .nav-tel:hover,
-.nav-contact .nav-tel:focus {
+.nav-contact .nav-tel:focus,
+.mail:hover,
+.mail:focus,
+.phone-number:hover,
+.phone-number:focus {
   color: var(--blue-accent);
 }
 
@@ -175,7 +179,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
-.phone-number {
+.adres {
   color: var(--white-color);
 }
 
@@ -187,17 +191,19 @@ body {
 
 /*---------------------------Футер Конец----------------*/
 
-/* Оформление страницы потрфолию */
+/*=======================Оформление Страницы Потрфолио==================*/
 
+/*-----------------------Кнопки Фильтра--------------------*/
 .filter-button {
   background-color: var(--grey-background-color);
   color: var(--title-text-color);
+
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .filter-button:hover,
@@ -205,3 +211,22 @@ body {
   background-color: var(--blue-accent);
   color: var(--white-color);
 }
+
+/*-----------------------Кнопки Фильтра Конец--------------------*/
+
+/*-----------------------Примеры Проектов--------------------*/
+.project-title {
+  color: var(--title-text-color);
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-text {
+  font-size: 16px;
+  line-height: 1.87;
+}
+/*-----------------------Примеры Проектов Конец--------------------*/
