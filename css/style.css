@@ -209,10 +209,11 @@ body {
 }
 
 .features-list {
-  flex-basis: calc((100% - 90px) / 4);
+  flex-basis: calc((100% - 60px) / 4);
   margin-left: 30px;
   margin-top: 30px;
 }
+
 .features-title {
   color: var(--title-text-color);
 
@@ -325,6 +326,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
+
 .adres {
   color: var(--white-color);
   padding-bottom: 9px;
@@ -355,6 +357,22 @@ body {
   line-height: 1.62;
   text-align: center;
   cursor: pointer;
+
+  display: inline-block;
+  border-radius: 4px;
+  border-color: transparent;
+
+  padding: 6px 22px 6px 22px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-list + .filter-list {
+  margin-left: 8px;
 }
 
 .filter-button:hover,
@@ -366,6 +384,25 @@ body {
 /*-----------------------Кнопки Фильтра Конец--------------------*/
 
 /*-----------------------Примеры Проектов--------------------*/
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.project-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.project-info {
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
 .project-title {
   color: var(--title-text-color);
 
@@ -374,6 +411,8 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
 }
 
 .project-text {
